@@ -1,6 +1,4 @@
-interface HeaderProps {
-  onSearch: (query: string) => void;
-}
+import { HeaderProps } from "../types/interfaces";
 
 const Header: React.FC<HeaderProps> = ({ onSearch }) => {
   return (

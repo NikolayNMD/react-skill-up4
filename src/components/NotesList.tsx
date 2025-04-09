@@ -1,10 +1,7 @@
-import { Note } from "./NotesManager";
+import { NotesListProps } from "../types/interfaces";
 import NoteCard from "./NoteCard";
 
-interface NotesListProps {
-  notes: Note[];
-  onDelete: (id: number) => void;
-}
+
 
 const NotesList: React.FC<NotesListProps> = ({ notes, onDelete }) => {
   return (

@@ -1,6 +1,4 @@
-interface FilterPanelProps {
-  onFilter: (category: string | null) => void;
-}
+import { FilterPanelProps } from "../types/interfaces";
 
 const FilterPanel: React.FC<FilterPanelProps> = ({ onFilter }) => {
   return (

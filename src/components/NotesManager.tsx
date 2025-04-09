@@ -2,14 +2,7 @@ import { useState } from "react";
 import NoteForm from "./NoteForm";
 import NotesList from "./NotesList";
 import FilterPanel from "./FilterPanel";
-
-export interface Note {
-  id: number;
-  title: string;
-  text: string;
-  category: string;
-  date: string;
-}
+import { Note } from "../types/interfaces";
 
 const NotesManager: React.FC<{ searchQuery: string }> = ({ searchQuery }) => {
   const [notes, setNotes] = useState<Note[]>([]);
